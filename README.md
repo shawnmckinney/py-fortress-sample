@@ -141,4 +141,4 @@ ________________________________________________________________________________
     OK
     ```
     
-8. Study the APIs in [test-sample.py](ldap/test-samples.py) module.
+8. Study the APIs in [test-sample.py](pyfortresssample/ldap/test-samples.py) module.
