@@ -1,7 +1,6 @@
 # py-fortress-sample README 
  
-QUICKSTART for py-fortress Role-Based Access Control.  Contains instructions to get an LDAP server up, install py-fortress
-and run a test program demonstrating RBAC API usage.
+This installs py-fortress and runs a simple test program of how the RBAC API works.
 ______________________________________________________________________________
 ## Prerequisites
 
