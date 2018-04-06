@@ -66,8 +66,9 @@ ________________________________________________________________________________
     
 3. Now edit the config file:
     ```
-    vi py-fortress-cfg.json
+    vi sample/ldap/py-fortress-cfg.json
     ```
+    _file is located in py-fortress-sample/sample/ldap folder_
 
 4. Set the LDAP Port
     ```
@@ -100,6 +101,7 @@ ________________________________________________________________________________
     pyvenv env
     . env/bin/activate
     ```
+    _from the py-fortress-sample folder_
     
 2. Install py-fortress:
     ```
@@ -110,13 +112,13 @@ ________________________________________________________________________________
     ```
     cd sample/ldap
     ```
-    _you should now be here: [py-fortress-sample/sample/ldap](./sample/ldap)_
+    _you're now here: [py-fortress-sample/sample/ldap](./sample/ldap)_
     
 4. Prepare the Directory Information Tree (using py-fortress installed package):
     ```
     python3 -m pyfortress.test.test_dit_dao
     ```
-    _if you're not familiar with LDAP, you can think of this command as creating tables in a new database instance._
+    _you can think of this command as creating tables in a new database instance._
 
 5. Example the output, should finish almost instaneously (< 1 sec).
     ```
