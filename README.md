@@ -108,24 +108,37 @@ ________________________________________________________________________________
     ```
     python3 -m "pyfortress.test.test_dit_dao"
     ```
-    _if you're not familiar with LDAP, you can think of this as creating tables in a RDBMS._
+    _if you're not familiar with LDAP, you can think of this command as creating tables in a new database instance._
+
+4. Example the output, should return a result almost instaneously.
+    ```
+    python3 -m "pyfortress.test.test_dit_dao"
+    2018-04-06 06:02:45,895 INFO Initialize py-fortress ldap...
+    2018-04-06 06:02:45,896 INFO ldap host: localhost, port:32768
+    test_bootstrap
+    test_bootstrap success
+    .
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.365s
+    ```
+    _If it hangs more than a second or two, ctrl-c to kill it. A bug in the ldap pool causes a hang, but it indicates something went wrong with your ldap server setup and/or ldap port wrong..._        
     
-3. Change folder to where the sample program is:
+5. Change folder to where the sample program is:
     ```
     cd pyfortresssample/ldap
     ```
     _you should now be here: [py-fortress-sample/pyfortresssample/ldap](pyfortresssample/ldap)_
     
-4. Run the test program:
+6. Run the test program:
     ```
     python3 test_samples.py 
     ```
     
-5. View the output:
+7. View the output:
     ```
     ----------------------------------------------------------------------
     Ran 18 tests in 2.388s
     OK
     ```
     
-6. Study the APIs in [test-sample.py](ldap/test-sample.py) module.
+8. Study the APIs in [test-sample.py](ldap/test-sample.py) module.
