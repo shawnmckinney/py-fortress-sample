@@ -68,7 +68,7 @@ ________________________________________________________________________________
     ```
     vi sample/ldap/py-fortress-cfg.json
     ```
-    _file is located in py-fortress-sample/sample/ldap folder_
+    _cfg file is here: [py-fortress-sample/sample/ldap/py-fortress-cfg.json](py-fortress-sample/sample/ldap/py-fortress-cfg.json) folder_
 
 4. Set the LDAP Port
     ```
