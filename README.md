@@ -66,7 +66,7 @@ ________________________________________________________________________________
     
 3. Now edit config file:
     ```
-    vi sample/ldap/py-fortress-cfg.json
+    vi py-fortress-cfg.json
     ```
 
 4. Set the LDAP Port
