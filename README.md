@@ -58,13 +58,13 @@ ________________________________________________________________________________
     git clone https://github.com/shawnmckinney/py-fortress-sample.git
     ```
 
-2. Change folder to where the sample program is:
+2. Change folder into the project:
     ```
-    cd py-fortress-sample/sample/ldap
+    cd py-fortress-sample
     ```
-    _you should now be here: [py-fortress-sample/sample/ldap](./sample/ldap)_
+    _you should now be here: py-fortress-sample_
     
-3. Now edit config file:
+3. Now edit the config file:
     ```
     vi py-fortress-cfg.json
     ```
@@ -106,13 +106,19 @@ ________________________________________________________________________________
     pip3 install py-fortress
     ```
     
-3. Prepare the Directory Information Tree (using py-fortress installed package):
+3. Change folder to where the sample program is:
+    ```
+    cd sample/ldap
+    ```
+    _you should now be here: [py-fortress-sample/sample/ldap](./sample/ldap)_
+    
+4. Prepare the Directory Information Tree (using py-fortress installed package):
     ```
     python3 -m pyfortress.test.test_dit_dao
     ```
     _if you're not familiar with LDAP, you can think of this command as creating tables in a new database instance._
 
-4. Example the output, should finish almost instaneously (< 1 sec).
+5. Example the output, should finish almost instaneously (< 1 sec).
     ```
     python3 -m pyfortress.test.test_dit_dao
     2018-04-06 06:02:45,895 INFO Initialize py-fortress ldap...
@@ -125,12 +131,12 @@ ________________________________________________________________________________
     ```
     _If it hangs more than a second or two, ctrl-c to kill it. A bug in the ldap pool causes a hang, but it indicates something went wrong with your ldap server setup and/or ldap port wrong..._        
     
-5. Run the test program:
+6. Run the test program:
     ```
     python3 test_samples.py 
     ```
     
-6. View the output:
+7. View the output:
     ```
     ----------------------------------------------------------------------
     Ran 18 tests in 2.388s
