@@ -96,15 +96,11 @@ ________________________________________________________________________________
     ```
     pyvenv env
     . env/bin/activate
-    pip3 install ldap3
-    export PYTHONPATH=$(pwd)
-    cd pyfortress/test
     ```
     
 2. Install py-fortress:
     ```
     pip3 install py-fortress
-    cd pyfortress/test
     ```
     
 3. Prepare the Directory Information Tree (using py-fortress installed package):
@@ -131,4 +127,4 @@ ________________________________________________________________________________
     OK
     ```
     
-6. Check out the APIs in [test-sample.py](ldap/test-sample.py) module.
+6. Study the APIs in [test-sample.py](ldap/test-sample.py) module.
