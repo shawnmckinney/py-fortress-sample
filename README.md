@@ -141,4 +141,4 @@ ________________________________________________________________________________
     OK
     ```
     
-8. Study the APIs in [test-samples.py](./sample/ldap/test-samples.py) module.
+8. Study the APIs in [test_samples.py](./sample/ldap/test_samples.py) module.
