@@ -64,7 +64,7 @@ ________________________________________________________________________________
 
 3. Now edit config file:
     ```
-    vi pyfortresssample/ldap/py-fortress-cfg.json
+    vi sample/ldap/py-fortress-cfg.json
     ```
 
 4. Set the LDAP Port
@@ -125,9 +125,9 @@ ________________________________________________________________________________
     
 5. Change folder to where the sample program is:
     ```
-    cd pyfortresssample/ldap
+    cd sample/ldap
     ```
-    _you should now be here: [py-fortress-sample/pyfortresssample/ldap](pyfortresssample/ldap)_
+    _you should now be here: [py-fortress-sample/sample/ldap](./sample/ldap)_
     
 6. Run the test program:
     ```
@@ -141,4 +141,4 @@ ________________________________________________________________________________
     OK
     ```
     
-8. Study the APIs in [test-sample.py](pyfortresssample/ldap/test-samples.py) module.
+8. Study the APIs in [test-samples.py](./sample/ldap/test-samples.py) module.
