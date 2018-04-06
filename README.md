@@ -58,12 +58,12 @@ ________________________________________________________________________________
     git clone https://github.com/shawnmckinney/py-fortress-sample.git
     ```
 
-2. Change directory into root folder of project:
+2. Change folder to where the sample program is:
     ```
-    cd py-fortress-sample
+    cd py-fortress-sample/sample/ldap
     ```
-    _you should now be in the root package of project_
-
+    _you should now be here: [py-fortress-sample/sample/ldap](./sample/ldap)_
+    
 3. Now edit config file:
     ```
     vi sample/ldap/py-fortress-cfg.json
@@ -114,7 +114,7 @@ ________________________________________________________________________________
 
 4. Example the output, should finish almost instaneously (< 1 sec).
     ```
-    python3 -m "pyfortress.test.test_dit_dao"
+    python3 -m pyfortress.test.test_dit_dao
     2018-04-06 06:02:45,895 INFO Initialize py-fortress ldap...
     2018-04-06 06:02:45,896 INFO ldap host: localhost, port:32768
     test_bootstrap
@@ -125,22 +125,16 @@ ________________________________________________________________________________
     ```
     _If it hangs more than a second or two, ctrl-c to kill it. A bug in the ldap pool causes a hang, but it indicates something went wrong with your ldap server setup and/or ldap port wrong..._        
     
-5. Change folder to where the sample program is:
-    ```
-    cd sample/ldap
-    ```
-    _you should now be here: [py-fortress-sample/sample/ldap](./sample/ldap)_
-    
-6. Run the test program:
+5. Run the test program:
     ```
     python3 test_samples.py 
     ```
     
-7. View the output:
+6. View the output:
     ```
     ----------------------------------------------------------------------
     Ran 18 tests in 2.388s
     OK
     ```
     
-8. Study the APIs in [test_samples.py](./sample/ldap/test_samples.py) module.
+7. Study the APIs in [test_samples.py](./sample/ldap/test_samples.py) module.
