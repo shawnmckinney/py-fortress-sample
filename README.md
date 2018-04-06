@@ -106,11 +106,11 @@ ________________________________________________________________________________
     
 3. Prepare the Directory Information Tree (using py-fortress installed package):
     ```
-    python3 -m "pyfortress.test.test_dit_dao"
+    python3 -m pyfortress.test.test_dit_dao
     ```
     _if you're not familiar with LDAP, you can think of this command as creating tables in a new database instance._
 
-4. Example the output, should return a result almost instaneously.
+4. Example the output, should finish almost instaneously (< 1 sec).
     ```
     python3 -m "pyfortress.test.test_dit_dao"
     2018-04-06 06:02:45,895 INFO Initialize py-fortress ldap...
