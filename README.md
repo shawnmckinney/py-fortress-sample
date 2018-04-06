@@ -60,6 +60,7 @@ ________________________________________________________________________________
     ```
     cd py-fortress-sample
     ```
+    _you should now be here: [py-fortress-sample](.)_
 
 3. Now edit config file:
     ```
@@ -111,9 +112,9 @@ ________________________________________________________________________________
     
 3. Change folder to where the sample program is:
     ```
-    cd ldap
+    cd pyfortresssample/ldap
     ```
-    _you should now be here: py-fortress-sample/pyfortresssample/ldap_
+    _you should now be here: [py-fortress-sample/pyfortresssample/ldap](pyfortresssample/ldap)_
     
 4. Run the test program:
     ```
