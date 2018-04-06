@@ -60,7 +60,7 @@ ________________________________________________________________________________
     ```
     cd py-fortress-sample
     ```
-    _you should now be here: [py-fortress-sample](.)_
+    _you should now be here: [py-fortress-sample](py-fortress-sample)_
 
 3. Now edit config file:
     ```
