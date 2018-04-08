@@ -1,6 +1,6 @@
 # py-fortress-sample README 
  
-This installs py-fortress and runs a simple test program of how the RBAC API works.
+This installs py-fortress and runs a simple test program of how the RBAC API works._
 ______________________________________________________________________________
 ## Prerequisites
 
@@ -10,46 +10,8 @@ Minimum hardware requirements:
 
 Minimum software requirements:
  * Linux machine
- * git
- * docker engine
- * Python3 and virtualenv (venv)
-________________________________________________________________________________
-## Start using ApacheDS or OpenLDAP Docker Image
-
-Follow these instructions: []()
-
-1. Pull the docker image (pick one):
-
-    a. apacheds
-    ```
-    docker pull apachedirectory/apacheds-for-apache-fortress-tests
-    ```
-
-    b. openldap
-    ```
-    docker pull apachedirectory/openldap-for-apache-fortress-tests
-    ```
-
-2. Run the docker container (pick one):
-
-    a. apacheds
-    ```
-    export CONTAINER_ID=$(docker run -d -P apachedirectory/apacheds-for-apache-fortress-tests)
-    export CONTAINER_PORT=$(docker inspect --format='{{(index (index .NetworkSettings.Ports "10389/tcp") 0).HostPort}}' $CONTAINER_ID)
-    echo $CONTAINER_PORT
-    ```
-       
-    b. openldap 
-    ```
-    export CONTAINER_ID=$(docker run -d -P apachedirectory/openldap-for-apache-fortress-tests)
-    export CONTAINER_PORT=$(docker inspect --format='{{(index (index .NetworkSettings.Ports "389/tcp") 0).HostPort}}' $CONTAINER_ID)
-    echo $CONTAINER_PORT
-    ```
-
-    * make note of the port, it's needed later
-    * depending on your docker setup may need to run as root or sudo priv's.
-
-[More Info here in py-fortress README-QUICKSTART](https://github.com/shawnmckinney/py-fortress/blob/master/pyfortress/doc/README-QUICKSTART.md)
+ * Python3 and virtualenv (venv) or system install of the ldap3 python module
+ * completion of [README-LDAP-DOCKER](./README-LDAP-DOCKER)
 ________________________________________________________________________________
 ## Clone py-fortress-sample, prepare for usage
 
@@ -57,7 +19,7 @@ ________________________________________________________________________________
     ```
     git clone https://github.com/shawnmckinney/py-fortress-sample.git
     ```
-
+    
 2. Change folder into the project:
     ```
     cd py-fortress-sample
@@ -92,7 +54,6 @@ ________________________________________________________________________________
     "dn": "cn=Manager,dc=example,dc=com",
     ```
     _per your earlier choice of docker image_
-
 ________________________________________________________________________________
 ## Setup Python Runtime and Install py-fortress
 
@@ -114,11 +75,12 @@ ________________________________________________________________________________
     ```
     _you're now here: [py-fortress-sample/sample/ldap](./sample/ldap)_
     
-4. Prepare the Directory Information Tree (using py-fortress installed package):
+4. Prepare the Directory Information Tree:
     ```
-    python3 -m pyfortress.test.test_dit_dao
+    initldap
     ```
-    _you can think of this command as creating tables in a new database instance._
+    *initldap is a python script, created during install of py-fortress package, that maps here: pyfortress.test.test_dit_dao*    
+    *you can think of this command as creating tables in a new database instance.*
 
 5. Example the output, should finish almost instaneously (< 1 sec).
     ```
@@ -145,4 +107,4 @@ ________________________________________________________________________________
     OK
     ```
     
-7. Study the APIs in [test_samples.py](./sample/ldap/test_samples.py) module.
+8. Study the APIs in [test_samples.py](./sample/ldap/test_samples.py) module.
