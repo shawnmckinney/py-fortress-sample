@@ -76,12 +76,11 @@ ________________________________________________________________________________
     _you're now here: [py-fortress-sample/sample/ldap](./sample/ldap)_
     
 4. Prepare the Directory Information Tree:
-    From the command line:
+    You can think of this command as creating tables in a new database instance.
     ```
     initldap
     ```
     *initldap is a python script, created during install of py-fortress package, that maps here: pyfortress.test.test_dit_dao*    
-    *you can think of this command as creating tables in a new database instance.*
 
 5. Examine the output, should finish almost instaneously (< 1 sec).
     ```
