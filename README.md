@@ -76,6 +76,7 @@ ________________________________________________________________________________
     _you're now here: [py-fortress-sample/sample/ldap](./sample/ldap)_
     
 4. Prepare the Directory Information Tree:
+
     You can think of this command as creating tables in a new database instance.
     ```
     initldap
