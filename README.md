@@ -11,7 +11,7 @@ Minimum hardware requirements:
 Minimum software requirements:
  * Linux machine
  * Python3 and virtualenv (venv) or system install of the ldap3 python module
- * completion of [README-LDAP-DOCKER](./README-LDAP-DOCKER)
+ * Installed [README-LDAP-DOCKER](https://github.com/shawnmckinney/py-fortress/blob/master/pyfortress/doc/README-LDAP-DOCKER.md)
 ________________________________________________________________________________
 ## Clone py-fortress-sample, prepare for usage
 
