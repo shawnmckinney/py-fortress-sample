@@ -76,15 +76,16 @@ ________________________________________________________________________________
     _you're now here: [py-fortress-sample/sample/ldap](./sample/ldap)_
     
 4. Prepare the Directory Information Tree:
+    From the command line:
     ```
     initldap
     ```
     *initldap is a python script, created during install of py-fortress package, that maps here: pyfortress.test.test_dit_dao*    
     *you can think of this command as creating tables in a new database instance.*
 
-5. Example the output, should finish almost instaneously (< 1 sec).
+5. Examine the output, should finish almost instaneously (< 1 sec).
     ```
-    python3 -m pyfortress.test.test_dit_dao
+    initldap
     2018-04-06 06:02:45,895 INFO Initialize py-fortress ldap...
     2018-04-06 06:02:45,896 INFO ldap host: localhost, port:32768
     test_bootstrap
@@ -93,7 +94,7 @@ ________________________________________________________________________________
     ----------------------------------------------------------------------
     Ran 1 test in 0.365s
     ```
-    _If it hangs more than a second or two, ctrl-c to kill it. A bug in the ldap pool causes a hang, but it indicates something went wrong with your ldap server setup and/or ldap port wrong..._        
+    *If it hangs more than a second or two, ctrl-c to kill it. A bug in the ldap pool causes a hang, but it indicates something went wrong with your ldap server setup and/or ldap port wrong...*        
     
 6. Run the test program:
     ```
