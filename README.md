@@ -11,7 +11,7 @@ Minimum hardware requirements:
 Minimum software requirements:
  * RHEL/Debian machine
  * Python >=3.6 
- * Installed [README-LDAP-DOCKER](https://github.com/shawnmckinney/py-fortress/blob/master/pyfortress/doc/README-LDAP-DOCKER.md)
+ * Installed [README-LDAP-DOCKER](https://github.com/shawnmckinney/py-fortress/blob/master/doc/README-LDAP-DOCKER.md)
  * python-ldap dependencies installed [README-UPGRADE-PYTHON](https://github.com/shawnmckinney/py-fortress/blob/master/doc/README-UPGRADE-PYTHON.md)
 ________________________________________________________________________________
 ## Clone py-fortress-sample, prepare for usage
