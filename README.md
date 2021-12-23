@@ -88,13 +88,13 @@ initldap
 5. Examine the output, should finish almost instaneously (< 1 sec).
     ```
     initldap
-    2018-04-06 06:02:45,895 INFO Initialize py-fortress ldap...
-    2018-04-06 06:02:45,896 INFO ldap host: localhost, port:32768
+    Initialize py-fortress ldap...
+    INFO ldap host: localhost, port:389
     test_bootstrap
     test_bootstrap success
     .
     ----------------------------------------------------------------------
-    Ran 1 test in 0.365s
+    Ran 1 test in 0.004s
     ```
     
 6. Run the test program:
@@ -105,7 +105,7 @@ initldap
 7. View the output:
     ```
     ----------------------------------------------------------------------
-    Ran 18 tests in 2.388s
+    Ran 28 tests in 0.024s
     OK
     ```
     
