@@ -96,7 +96,6 @@ initldap
     ----------------------------------------------------------------------
     Ran 1 test in 0.365s
     ```
-    *If it hangs more than a second or two, ctrl-c to kill it. A bug in the ldap pool causes a hang, but it indicates something went wrong with your ldap server setup and/or ldap port wrong...*        
     
 6. Run the test program:
     ```
