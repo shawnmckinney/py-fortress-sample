@@ -35,7 +35,7 @@ From the project root folder, copy sample cfg file:
 cp py-fortress-cfg.json.sample py-fortress-cfg.json
 ```
 
-sample cfg file is here: [py-fortress-cfg.json.sample](../py-fortress-cfg.json.sample)
+sample cfg file is here: [py-fortress-cfg.json.sample](https://github.com/shawnmckinney/py-fortress/blob/master/py-fortress-cfg.json.sample)
 
 4. Now edit config file:
  ```
