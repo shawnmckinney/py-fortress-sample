@@ -9,9 +9,10 @@ Minimum hardware requirements:
  * 1 GB RAM
 
 Minimum software requirements:
- * Linux machine
- * Python3 and virtualenv (venv)
+ * RHEL/Debian machine
+ * Python >=3.6 
  * Installed [README-LDAP-DOCKER](https://github.com/shawnmckinney/py-fortress/blob/master/pyfortress/doc/README-LDAP-DOCKER.md)
+ * python-ldap dependencies installed [README-UPGRADE-PYTHON](https://github.com/shawnmckinney/py-fortress/blob/master/doc/README-UPGRADE-PYTHON.md)
 ________________________________________________________________________________
 ## Clone py-fortress-sample, prepare for usage
 
@@ -26,62 +27,63 @@ ________________________________________________________________________________
     ```
     _you should now be here: py-fortress-sample_
     
-3. Now edit the config file:
-    ```
-    vi sample/ldap/py-fortress-cfg.json
-    ```
-    _cfg file is here: [py-fortress-sample/sample/ldap/py-fortress-cfg.json](sample/ldap/py-fortress-cfg.json)_
+3. Prepare the config:
 
-4. Set the LDAP Port
-    ```
-    ...
-    "ldap": {
-      ...
-      "port": 32768,
-    ...
-    ```
-    _use value obtained earler_
-        
-5. Update the connection parameters (pick one):
+From the project root folder, copy sample cfg file:
 
-    a. apacheds:
-    ```
-    "dn": "uid=admin,ou=system",
-    ```
+```bash
+cp py-fortress-cfg.json.sample py-fortress-cfg.json
+```
+
+sample cfg file is here: [py-fortress-cfg.json.sample](../py-fortress-cfg.json.sample)
+
+4. Now edit config file:
+ ```
+vi py-fortress-cfg.json
+```
+
+5. Set the LDAP URI
+```
+...
+"ldap": {
+...
+"uri": "ldap://localhost",
+...
+```
+
+* use value obtained during LDAP setup
+* if in doubt use the defaults
     
-    b. openldap:
-    ```
-    "dn": "cn=Manager,dc=example,dc=com",
-    ```
-    _per your earlier choice of docker image_
+6. Save and exit
+
 ________________________________________________________________________________
 ## Setup Python Runtime and Install py-fortress
 
 1. Prepare your terminal for execution of python3.  From the main dir of the git repo:
-    ```
-    pyvenv env
-    . env/bin/activate
-    ```
-    _from the py-fortress-sample folder_
+```
+python3 -m venv env
+. env/bin/activate
+```
+_from the py-fortress-sample folder_
     
 2. Install py-fortress:
-    ```
-    pip3 install py-fortress
-    ```
+```
+pip3 install py-fortress
+```
     
 3. Change folder to where the sample program is:
-    ```
-    cd sample/ldap
-    ```
-    _you're now here: [py-fortress-sample/sample/ldap](./sample/ldap)_
+```
+cd sample/ldap
+```
+_you're now here: [py-fortress-sample/sample/ldap](./sample/ldap)_
     
 4. Prepare the Directory Information Tree:
 
-    You can think of this command as creating tables in a new database instance.
-    ```
-    initldap
-    ```
-    *initldap is a python script, created during install of py-fortress package, that maps here: pyfortress.test.test_dit_dao*    
+You can think of this command as creating tables in a new database instance.
+```
+initldap
+```
+*initldap is a python script, created during install of py-fortress package, that maps here: pyfortress.test.test_dit_dao*    
 
 5. Examine the output, should finish almost instaneously (< 1 sec).
     ```

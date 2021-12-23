@@ -1,0 +1,25 @@
+{
+  "logger": {
+    "level": "INFO",
+    "file_name": "fortress",
+    "console_out": true
+  },
+  "ldap": {
+    "uri": "ldap://localhost",
+    "timeout": 1,
+    "pool_size": 5,
+    "dn": "dc=example,dc=com",
+    "password": "secret",
+    "use_tls": false,
+    "debug": false
+  },
+  "dit": {
+    "suffix": "dc=example,dc=com",
+    "users": "People",
+    "roles": "Roles",
+    "perms": "Perms"
+  },
+  "schema": {
+    "raw_delimiter": "$"
+  }
+}
