@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='py-fortress-sample',
-      version='0.1.1',
+      version='0.1.7',
       python_requires='>=3.6',
       description='RBAC for Python Test Samples',
       long_description=long_description,
@@ -26,7 +26,7 @@ setup(name='py-fortress-sample',
       },
 
       install_requires=[
-          'py-fortress >= 0.1.1'
+          'py-fortress >= 0.1.7'
       ],
       classifiers=[
           'Development Status :: 4 - Beta',
